@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="template1" template="/WEB-INF/views/layout.jsp">
+		<put-attribute name="header" value="/WEB-INF/views/header.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/login.jsp" />
+	</definition>
+	
+	
+ 	<definition name="currentlayout" extends="template1">
+	</definition>
+	<definition name="HomePage.page" extends="template1">
+		<put-attribute name="body" value="/WEB-INF/views/login.jsp" />
+	</definition>
+		
+	<definition name="WelcomePage.page" extends="currentlayout">
+    	<put-attribute name="header" value="/WEB-INF/views/welcome_header.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/welcome_page.jsp" />
+	</definition>	
+	
+	<definition name="userReg.page" extends="currentlayout">
+    	<put-attribute name="header" value="/WEB-INF/views/header.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/welcome_page.jsp" />
+	</definition>
+	
+	
+	
+	<definition name="registerUser.page" extends="currentlayout">
+    	<put-attribute name="header" value="/WEB-INF/views/header.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/registerUser.jsp" />
+	</definition>
+	
+	
+	
+	<definition name="customersList.page" extends="currentlayout">
+    	<put-attribute name="header" value="/WEB-INF/views/welcome_header.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/displayuser.jsp" />
+	</definition>
+	
+	<definition name="addCustomer.page" extends="currentlayout">
+	    	<put-attribute name="header" value="/WEB-INF/views/welcome_header.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/register.jsp" />
+	</definition>
+	
+	<definition name="searchCustomer.page" extends="currentlayout">
+    	<put-attribute name="header" value="/WEB-INF/views/welcome_header.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/Search.jsp" />
+	</definition>	
+	
+	<definition name="showCustomer.page" extends="currentlayout">
+    	<put-attribute name="header" value="/WEB-INF/views/welcome_header.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/showCustomer.jsp" />
+	</definition>
+	
+	<definition name="updateCustomer.page" extends="currentlayout">
+    	<put-attribute name="header" value="/WEB-INF/views/welcome_header.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/updateCustomer.jsp" />
+	</definition>
+	
+<!--	<definition name="addCollege.page" extends="currentlayout">
+		<put-attribute name="body" value="/WEB-INF/views/college/addcollege.jsp" />
+	</definition>
+	
+	<definition name="viewCollege.page" extends="currentlayout">
+		<put-attribute name="body" value="/WEB-INF/views/college/viewcollege.jsp" />
+	</definition>	
+	
+	<definition name="deleteCollege.page" extends="currentlayout">
+		<put-attribute name="body" value="/WEB-INF/views/college/deletecollege.jsp" />
+	</definition>		
+	
+	<definition name="editCollege.page" extends="currentlayout">
+		<put-attribute name="body" value="/WEB-INF/views/college/editcollege.jsp" />
+	</definition>	
+	
+	<definition name="updateCollege.page" extends="currentlayout">
+		<put-attribute name="body" value="/WEB-INF/views/college/updatecollege.jsp" />		
+	</definition>	
+	
+	<definition name="success.page" extends="currentlayout">
+		<put-attribute name="body" value="/WEB-INF/views/messages/success.jsp" />
+	</definition>
+	
+	<definition name="failure.page" extends="currentlayout">
+		<put-attribute name="body" value="/WEB-INF/views/messages/failure.jsp" />
+	</definition>	 -->
+		
+</tiles-definitions>
