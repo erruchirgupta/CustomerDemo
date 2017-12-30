@@ -2,6 +2,15 @@ package com.demo.dao;
 
 import org.hibernate.cfg.AnnotationConfiguration;
 import org.hibernate.SessionFactory;
+
+
+/**
+ * @author	Ruchir Gupta
+ * @since	31 dec 2017
+ * @contact	erruchirgupta@gmail.com
+ *
+ */
+
 @SuppressWarnings("deprecation")
 public class HibernateUtil {
 

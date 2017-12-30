@@ -10,8 +10,11 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.demo.beans.Users;
+
 /**
- * @author 1213330
+ * @author	Ruchir Gupta
+ * @since	31 dec 2017
+ * @contact	erruchirgupta@gmail.com
  *
  */
 

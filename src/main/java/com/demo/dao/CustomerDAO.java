@@ -14,6 +14,14 @@ import org.springframework.transaction.annotation.Transactional;
 import com.demo.beans.Customer;
 import com.demo.controller.HomeController;
 
+
+/**
+ * @author	Ruchir Gupta
+ * @since	31 dec 2017
+ * @contact	erruchirgupta@gmail.com
+ *
+ */
+
 @Repository
 public class CustomerDAO {
 	

@@ -29,7 +29,11 @@ import com.demo.beans.Users;
 import com.demo.dao.CustomerDAO;
 
 /**
- * Handles requests for the application home page.
+ * @author	Ruchir Gupta
+ * @since	31 dec 2017
+ * @contact	erruchirgupta@gmail.com
+ *
+ * @about Handles requests for the application home page.
  */
 @Controller
 @SessionAttributes({ "customers", "user", "message" })
