@@ -52,7 +52,7 @@
 	
 	<context:property-placeholder location="classpath:properties/application-${spring.profiles.active?:dev}.properties" />
 	
-	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
+	<bean id="dataSource" class="com.demo.util.CustomBasicDataSource"
 		destroy-method="close">
 		<property name="driverClassName" value="${springsproject.db.driverClassName}" />
 		<property name="url" value="${springsproject.db.url}" />
