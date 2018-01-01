@@ -16,9 +16,10 @@ import javax.crypto.spec.SecretKeySpec;
 
 import org.apache.commons.dbcp.BasicDataSource;
 
-/**
+/*
+ * 
  * @author	Ruchir Gupta
- * @since	31 dec 2017
+ * @since	01 JAN 2018
  * @contact	erruchirgupta@gmail.com
  *
  * @about encrypted password in configuration
@@ -129,10 +130,4 @@ public class CustomBasicDataSource extends BasicDataSource {
 	 
 	        return rawText; 
 	    }
-	
-		public static void main(String[] a){
-			
-			CustomBasicDataSource object = new CustomBasicDataSource();
-			System.out.println(object.encryptText("root"));
-		 }
 }
