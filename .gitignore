@@ -1,0 +1,9 @@
+*.project
+target/*
+src/ui/dist/*
+src/main/webapp/dist/*
+/.settings/*
+/.classpath
+/target/
+.idea/*
+*.iml
