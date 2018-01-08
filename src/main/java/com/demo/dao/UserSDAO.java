@@ -55,9 +55,13 @@ public class UserSDAO {
 		logger.info("Begining of checkUser DAO method");
 		boolean status = false;
 
-		if (getUsers(UsersBean.getName()) != null)
+		Users users = getUsers(UsersBean.getName());
+		
+		if (users != null && users.getPass().equals(UsersBean.getPass()))
 			status = true;
-
+		
+		logger.debug("checkUser DAO method :: login status => "+status);
+		
 		logger.info("End of checkUser DAO method");
 		return status;
 	}
