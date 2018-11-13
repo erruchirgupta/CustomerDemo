@@ -11,6 +11,9 @@ import org.hibernate.SessionFactory;
  *
  */
 
+
+
+
 @SuppressWarnings("deprecation")
 public class HibernateUtil {
 
